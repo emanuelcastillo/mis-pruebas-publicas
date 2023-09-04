@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Listado de Aplicaciones</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
@@ -39,9 +39,20 @@
     </style>
   </head>
   <body>
-    <div id="contenido-dinamico">
-      
-    </div>
+    <h1>Listado de Aplicaciones</h1>
+    <ul class="app-list">
+        <li class="app-item">
+            <h2>Aplicación 1</h2>
+            <p>Descripción de la aplicación 1.</p>
+            <a href="enlace_a_app1.ipa" download>Descargar</a>
+        </li>
+        <li class="app-item">
+            <h2>Aplicación 2</h2>
+            <p>Descripción de la aplicación 2.</p>
+            <a href="enlace_a_app2.ipa" download>Descargar</a>
+        </li>
+        <!-- Agrega más elementos de la lista según sea necesario -->
+    </ul>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
