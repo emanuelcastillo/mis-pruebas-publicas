@@ -60,7 +60,7 @@
         // // The Firebase SDK is initialized and available here!
         //
         // firebase.auth().onAuthStateChanged(user => { });
-        firebase.database().ref('/flutter-apps/mis-apps').on('value', snapshot => { console.log(snapshot.val()) });
+        firebase.database().ref('/flutter-apps/mis-apps').on('value', snapshot => { alert(JSON.stringify(snapshot.val())) });
         // firebase.firestore().doc('/foo/bar').get().then(() => { });
         // firebase.functions().httpsCallable('yourFunction')().then(() => { });
         // firebase.messaging().requestPermission().then(() => { });
